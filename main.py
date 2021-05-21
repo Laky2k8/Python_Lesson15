@@ -31,7 +31,7 @@ volume = (radius ** 2 * 3.14) * height / 3
 
 print("The volume of this cone is ", volume, " units. \n \n \n")
 
-#Swapping two variables for no reason.
+#Swapping two variables with two methods.
 task3 = pyfiglet.figlet_format("TASK  3")
 print(task3 , "\n")
 
@@ -54,4 +54,40 @@ temp = a
 a = b
 b = temp
 
-print("A now is: ", a, " while B now is: ", b, "\n \n")
+print("A now is: ", a, " while B now is: ", b, "\n \n \n")
+
+#Getting a list of numbers and then converting each of them into integers.
+task4 = pyfiglet.figlet_format("TASK  4")
+print(task4 , "\n")
+
+superList = input("Please input a list of numbers seperated with columns: ")
+
+x = superList.split(", ")
+
+print("\n \n \n")
+
+#We'll split a list by the even and odd numbers.
+task5 = pyfiglet.figlet_format("TASK  5")
+print(task5 , "\n")
+
+numList = [1,2,5,6,8,9,12,25,32,48,56,99,134,357,179,12,78,34567, 7654332]
+even = []
+odd = []
+
+i = 0
+
+print("We have a list: ", numList)
+print("We'll now split this list by the even and odd numbers. \n \n")
+
+while i < len(numList):
+    if i % 2 == 0:
+        even.append(numList[i])
+    else:
+        odd.append(numList[i])
+    i += 1
+
+print("Our list's even numbers: ", even)
+print("Our list's odd numbers: ", odd, "\n \n \n")
+
+thx = pyfiglet.figlet_format("THANKS FOR USING THIS PROGRAM!")
+print(thx , "\n")
